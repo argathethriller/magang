@@ -3,8 +3,18 @@
 		$(this).addClass("formAPD__container__group__field--focus");
 	});
 
-
 	$(".formAPD__container__button").click(function(){
+
+		/*
+		if($(":input").val() === ""){
+			$("#fname").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
+			$("#errorname").html("Nama tidak boleh kosong");
+		} else{
+			$("#fname").addClass("formAPD__container__group__field");
+			$("#errorname").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
+		}
+		*/
+		
 		if($('#fname').val() === ""){
 			$("#fname").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errorname").html("Nama tidak boleh kosong");
@@ -35,9 +45,10 @@
 		}
 		
 		if ($('#bio').val() === ""){
-			$("#bio").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
+			$("#bio").removeClass("formAPD__container__group__txtar").addClass("formAPD__container__group__field--error");
 			$("#errorbio").html("Bio tidak boleh kosong");
 		}
+		
 	});
 
 	$(":input").blur(function() {
