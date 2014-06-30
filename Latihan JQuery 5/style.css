@@ -1,10 +1,10 @@
-
 * {
   box-sizing: border-box;
 }
 
 html {
-  font: 400 16px/1.6em Cambria;
+  font: 400 16px/1.6em Cambria; 
+  /*font: 400 16px Cambria;*/
 }
 
 fieldset{
@@ -23,7 +23,7 @@ fieldset{
 	border: 1px solid #ccc;
 }
 
-.formAPD__form-container{
+.formAPD__container{
 	width:90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -31,7 +31,7 @@ fieldset{
 	margin-bottom: 5%;
 }
 
-.formAPD__form-container__maintitle{
+.formAPD__container__maintitle{
 	text-align: center;
 	font-size: 2em;
 	font-weight: bold;
@@ -42,7 +42,7 @@ fieldset{
 	margin-right: auto;
 }
 
-.formAPD__form-container__field{
+.formAPD__container__field{
 	width:100%;
 	height:40px;
 	margin-left: auto;
@@ -50,33 +50,33 @@ fieldset{
 	margin-bottom:5%;	
 }
 
-.formAPD__form-container__field:hover {  
-    text-decoration: none;
+.formAPD__container__field--focus{
+	width:100%;
+	height:40px;
+	box-shadow: 0 0 7px #6670ff;
+  	padding: 3px 0px 3px 3px;
+  	margin: 5px 1px 3px 0px;
+  	border: 1px solid #6670ff;
 }
 
-.formAPD__form-container__txtar:hover{
+.formAPD__container__field:hover {  
+    box-shadow: 1px 1px 1px #000;
+}
+
+.formAPD__container__txtar:hover{
 
 }
 
-.formAPD__form-container input{
+.formAPD__container input{
 	font-family: Cambria;
 	font-size:1em;
 }
 
-.formAPD__form-container textarea{
+.formAPD__container textarea{
 	font-family: Cambria;
 }
 
-.formAPD__form-container__field--focus{
-	width:100%;
-	height:40px;
-	box-shadow: 0 0 5px rgba(0, 255, 0, 1);
-  	padding: 3px 0px 3px 3px;
-  	margin: 5px 1px 3px 0px;
-  	border: 1px solid rgba(0, 255, 0, 1);
-}
-
-.formAPD__form-container__field--error{
+.formAPD__container__field--error{
 	width:100%;
 	height:40px;
 	box-shadow: 0 0 5px rgba(255, 0, 0, 1);
@@ -85,21 +85,21 @@ fieldset{
   	border: 1px solid rgba(255, 0, 0, 1);
 }
 
-.formAPD__form-container__field--solved{
+.formAPD__container__field--solved{
 	display:none;
 }
 
-.formAPD__form-container__radio{
+.formAPD__container__radio{
 	margin-bottom:5%;
 }
 
-.formAPD__form-container__txtar{
+.formAPD__container__txtar{
 	min-width: 100%;
 	max-width: 100%;
 	margin-bottom:5%;
 }
 
-.formAPD__form-container__button{
+.formAPD__container__button{
 	   border: 1px solid #6670ff;
 	   background: #6670ff;
 	   -webkit-border-radius: 4px;
