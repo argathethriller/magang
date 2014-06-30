@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="form">
+        <div class="form-row">
+            <label for="Name">Name</label>
+            <input
+                class="form-input"
+                id="Name"
+                type="text">
+        </div>
+        <div class="form-row" id="hobbyWrapper">
+            <label for="Hobby">Hobby</label>
+            <input
+                class="form-input"
+                id="Hobby"
+                type="text">
+        </div>
+        <div class="form-row">
+            <div class="grid">
+                <div class="grid__col grid__col--6">
+                    <button class="btn btn--block" id="addHobby">add hobby</button>
+                </div>
+                <div class="grid__col grid__col--6">
+                    <button class="btn btn--block" type="reset">reset</button>
+                </div>
+            </div>   
+        </div>
+
+        <hr>
+
+        <button class="btn btn--block btn--primary" type="submit">submit</button>
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
