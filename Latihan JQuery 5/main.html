@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<title>Layout</title>
+  	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form class="formAPD" id="commentForm" method="get" action="">
+		<div class="formAPD__form-container" id="formAPD__form-container">
+			<div class="formAPD__form-container__maintitle" id="maintitle"> Login </div>
+		
+			<div class="formAPD__form-container__title" id="username">Username</div>
+			<input class="formAPD__form-container__field " id="fname" name="name" type="text" required/>
+			<small class="formAPD__form-container__error-msg" id="errorname"> </small>
+			
+			<div class="formAPD__form-container__title">Email</div>
+			<input class="formAPD__form-container__field" id="email" name="email" type="email" required/>
+			<small class="formAPD__form-container__error-msg" id="errormail">  </small>
+
+			<div class="formAPD__form-container__title">Password</div>
+			<input class="formAPD__form-container__field" id="passwd" name="passwd" type="password" placeholder="at least 8 characters" required/>
+			<small class="formAPD__form-container__error-msg" id="errorpass" > </small>
+
+			<div class="formAPD__form-container__title">Gender</div>
+			<input class="formAPD__form-container__radio" type="radio" name="sex" id="gender" value="male">Male
+			<input class="formAPD__form-container__radio" type="radio" name="sex" id="gender" value="female">Female
+			<small class="formAPD__form-container__error-msg" id="errorgen"> </small>
+
+			<div class="formAPD__form-container__title">Bio</div>
+			<textarea class="formAPD__form-container__txtar" id="bio" name="bio" type="textfield" required/> </textarea>
+			<small class="formAPD__form-container__error-msg" id="errorbio"> </small>
+
+			<input class="formAPD__form-container__button" type="submit" value="CREATE ACCOUNT"/> 
+		</div>	
+	</form>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+	<!--
+	/*
+		$(".submit").click(function(){
+			if($('#fname').val() === ""){
+				if($('#phone').val() === ""){ 
+					//alert("Nama & nomor telepon belum diisi");
+					$("#fname").html( "<p>Test</p>" );
+				} else if($('#phone').val().charAt(0) !== "0"){
+					alert("Nama belum diisi & nomor telepon tidak valid");
+				} else {
+					alert("Nama belum diisi");
+				}
+			} else {
+				if($('#phone').val() === ""){
+					alert("Nomor telepon belum diisi");
+				} 
+				else if ($('#phone').val().charAt(0) !== "0"){
+				  	alert("Isian masih salah");
+				} 
+				else {
+					alert("Terima kasih sudah mengisi secara lengkap");	
+				}
+			}
+		});
+	*/
+	-->
+</body>

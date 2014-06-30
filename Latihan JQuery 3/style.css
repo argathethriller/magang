@@ -1,0 +1,12 @@
+ .box{
+ 	height:50px;
+ 	width:50px;
+ 	background: #222;
+ }
+
+  .box--big{
+ 	height:100px;
+ 	width:100px;
+ 	background: #369;
+ 	border:solid 2px blue;
+ }

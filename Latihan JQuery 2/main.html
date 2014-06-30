@@ -1,0 +1,38 @@
+<!-- JQuery - DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="UTF-8">
+	  	<title>Layout</title>
+	  	<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	
+		<div class="title"> 
+			<h2>Dom Manipulation </h2> 
+		</div>
+		
+		<div class="box"> </div>
+		
+		<p>
+			<input name="submit" class="submit" type="submit" value="Ubah!"/>
+		</p>
+
+		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+			$(".submit").click(function(){
+			    $(".title").replaceWith("<h2>Dom diubah</h2>");
+			    $(".box").css("background","#369");
+			    $(".submit").hide();
+		  	});
+		  });
+		</script>
+
+	</body>
+</html>

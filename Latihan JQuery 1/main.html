@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<title>Layout</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"> </script>
+  	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form class="formAPD" id="commentForm" method="get" action="">
+		<fieldset>
+			<h2>Isikan nama dan nomor telepon anda</h2>
+			<p>
+				<label for="fname">Nama (wajib)</label> </br>
+				<input id="fname" name="name" type="text" required/>
+			</p>
+			<p>
+				<label for="phone">Nomor telepon (wajib, maksimal 16 karakter & diawali dengan "0")</label> </br>
+				<input id="phone" type="text" maxlength="16" name="phone" required/>
+			</p>
+			<p>
+				<input class="submit" type="submit" value="Submit"/>
+			</p>
+		</fieldset>
+	</form>
+
+
+	<script>
+		$(".submit").click(function(){
+			if($('#fname').val() === ""){
+				if($('#phone').val() === ""){ 
+					alert("Nama & nomor telepon belum diisi");
+				} else if($('#phone').val().charAt(0) !== "0"){
+					alert("Nama belum diisi & nomor telepon tidak valid");
+				} else {
+					alert("Nama belum diisi");
+				}
+			} else {
+				if($('#phone').val() === ""){
+					alert("Nomor telepon belum diisi");
+				} 
+				else if ($('#phone').val().charAt(0) !== "0"){
+				  	alert("Isian masih salah");
+				} 
+				else {
+					alert("Terima kasih sudah mengisi secara lengkap");	
+				}
+			}
+		});
+	</script>
+</body>

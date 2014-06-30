@@ -1,0 +1,36 @@
+.btn {
+	border: solid 1px black;
+	color: #fff;
+	width :  200px;
+	height:  80px;
+}
+
+.btn--big {
+	width :  400px;
+	height:  150px;
+}
+
+.btn--red {
+	background: #f00;
+}
+
+.btn--blue {
+	background: #00f;	
+}
+
+.btn--green {
+	background: #0f0;	
+}
+
+.btn--white {
+	background: #fff;	
+	color: #000;
+}
+
+button {
+	background:  #fff;
+}
+
+/* buat seringkas mungkin, gak perlu buat small & big jika "small-nya" sudah jadi standar
+/* Susunan class di html mulai dari basenya kemudian bagian bawah2nya yang masih sama, kemudian yang baru ada bedanya
+

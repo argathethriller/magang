@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 400 16px/1.6em sans-serif;
+}
+
+fieldset{
+  width:70%;
+  text-align:center;
+  margin-left:15%;
+  margin-right: 15%;
+  background: #eeeeee;
+}
+
+legend{
+  text-align:center;
+  margin-left:40%;
+  margin-right: 40%;
+}
+
+.container {
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
