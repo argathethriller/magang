@@ -54,6 +54,10 @@ html {
     outline: none;
 }
 
+.form-input--error{
+    background: #ff0000;
+}
+
 .btn {
     padding: .8em 1.6em;
     border: solid 1px #999;

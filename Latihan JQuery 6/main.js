@@ -1,7 +1,6 @@
+ $(document).ready(function(){
 
-(function () {
-
-    var btn         = document.querySelector('#addHobby'),
+	var btn         = document.querySelector('#addHobby'),
         container   = document.querySelector('#hobbyWrapper'),
         input       = document.querySelector('#Hobby');
 
@@ -14,4 +13,11 @@
         newInput.focus();
     }, false);
 
-})();
+ 	$(':submit').click(function(){
+		if($('#Name').val() === ""){
+			$('#Name').changeClass("form-input--error");
+			$('#Name').html("saya ganteng");
+		}
+	});
+});
+
