@@ -1,0 +1,221 @@
+body {
+  background-color: white;
+  height: 100%;
+  width: 100%; }
+
+h2 {
+  text-align: left; }
+
+p {
+  text-align: center; }
+
+header {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  font-family: Arial; }
+  header .a {
+    margin-left: 80px;
+    bottom: 40px; }
+  header ul {
+    border-left: 1px black;
+    margin-left: 10%; }
+  header li {
+    display: inline;
+    margin-left: 1em; }
+  header h2 {
+    margin-left: 15%;
+    margin-top: 1.5em;
+    margin-bottom: auto; }
+  header .titlepage {
+    font-size: 2.2em;
+    color: #1f369e;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%; }
+  header .tabel1 {
+    align: right;
+    float: right;
+    width: 30%;
+    margin-right: 15%; }
+  header .tabel2 {
+    align: right;
+    float: right;
+    width: 60%;
+    margin-right: 12%; }
+    header .tabel2 li {
+      color: #1f369e; }
+
+#content2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(kamarmandi.jpg);
+  overflow: auto; }
+  #content2 #content2a {
+    width: 100%;
+    height: 100em;
+    color: white;
+    text-align: left;
+    float: left;
+    text-align: left;
+    position: relative;
+    overflow-x: hidden; }
+    #content2 #content2a #content2aa {
+      width: 55%;
+      height: auto;
+      font-family: sans-serif,Arial;
+      float: right;
+      position: relative;
+      color: black;
+      background: white;
+      margin-right: 15%;
+      z-index: 6;
+      top: 5%;
+      position: relative; }
+      #content2 #content2a #content2aa .img {
+        text-align: center;
+        width: 100%;
+        margin-right: 5%; }
+        #content2 #content2a #content2aa .img img {
+          width: 90%; }
+      #content2 #content2a #content2aa .main {
+        margin-left: 5%; }
+        #content2 #content2a #content2aa .main .title {
+          font-size: 1.3em;
+          font-weight: bold;
+          float: left;
+          margin-bottom: 5%;
+          width: 60%; }
+        #content2 #content2a #content2aa .main .maintitle {
+          float: left;
+          height: 15%;
+          width: 100%;
+          border-bottom: solid 1px; }
+        #content2 #content2a #content2aa .main .read {
+          width: 40%;
+          text-align: right;
+          color: #1f369e;
+          float: right;
+          margin-bottom: 5%;
+          margin-top: 10%; }
+        #content2 #content2a #content2aa .main .textpic {
+          margin-top: 5%;
+          float: left; }
+        #content2 #content2a #content2aa .main .ltext {
+          float: left;
+          width: 60%; }
+        #content2 #content2a #content2aa .main .image {
+          float: right;
+          width: 40%;
+          text-align: right; }
+        #content2 #content2a #content2aa .main .item1 {
+          float: left;
+          width: 30%;
+          margin-right: 3%; }
+        #content2 #content2a #content2aa .main .item2 {
+          float: left;
+          width: 30%; }
+        #content2 #content2a #content2aa .main .item3 {
+          float: left;
+          width: 30%;
+          margin-left: 3%; }
+      #content2 #content2a #content2aa .desc {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        float: left; }
+        #content2 #content2a #content2aa .desc .title2 {
+          font-size: 1.3em;
+          font-weight: bold;
+          float: left; }
+        #content2 #content2a #content2aa .desc .text2 {
+          float: left; }
+        #content2 #content2a #content2aa .desc .read {
+          float: left;
+          text-align: left; }
+      #content2 #content2a #content2aa h1 {
+        margin-left: 5%;
+        text-align: left;
+        font-size: 3em;
+        color: #1f369e; }
+      #content2 #content2a #content2aa p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left; }
+      #content2 #content2a #content2aa .table {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left; }
+      #content2 #content2a #content2aa .gallery_image {
+        width: 20%;
+        height: 20%; }
+    #content2 #content2a #side {
+      float: left;
+      width: 20%;
+      height: 30%;
+      margin-top: 10%;
+      margin-left: 10%;
+      font-family: Arial;
+      background-color: goldenrod; }
+      #content2 #content2a #side #Hori {
+        font-size: 1.7em;
+        left: 0%;
+        margin-top: 5%;
+        height: 1%;
+        color: #1f369e;
+        text-align: left; }
+        #content2 #content2a #side #Hori hside {
+          padding: 1.1em;
+          margin-bottom: 15%; }
+      #content2 #content2a #side ul {
+        list-style-type: none;
+        margin-top: 15%;
+        margin-left: -10%;
+        align: left; }
+        #content2 #content2a #side ul li {
+          margin-left: 1%;
+          padding: 0.8em;
+          font-size: 1.2em;
+          border-bottom: dashed 1px white; }
+          #content2 #content2a #side ul li .no-border {
+            border-bottom: none;
+            border-top: none; }
+        #content2 #content2a #side ul li:hover {
+          background-color: #D6B66D;
+          width: 101%;
+          z-index: 100;
+          color: black;
+          position: relative; }
+      #content2 #content2a #side .tab {
+        height: 85%;
+        background: #1f369e;
+        margin-top: 12%; }
+
+#footer {
+  width: 100%;
+  height: 20%;
+  margin-top: 0px;
+  float: left;
+  background: white; }
+  #footer .logo {
+    float: left;
+    margin-left: 5%;
+    margin-top: 1%; }
+  #footer .copyright {
+    text-align: right;
+    float: right;
+    margin-right: 15%;
+    margin-top: 1%;
+    font-family: Arial; }
+  #footer .tabel1 {
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 1%; }
+  #footer .tabel2 {
+    margin-left: 10%;
+    margin-right: auto; }
+  #footer li {
+    display: inline;
+    font-family: Arial;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
