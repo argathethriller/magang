@@ -35,5 +35,14 @@
 			$('#Hobby').addClass("form-input--error");
 		}
 	});
+
+    $(':reset').click(function(){
+        $('#Name').removeClass("form-input--error").addClass("form-input");
+        $('#Hobby').each(function( i ) {
+            $('#Hobby').removeClass("form-input--error").addClass("form-input");
+        });
+
+        //Buatlah looping untuk validasi semua isian hobby
+    });
 });
 
