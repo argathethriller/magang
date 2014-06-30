@@ -2,7 +2,11 @@
  	$(":input").focus(function(){
 		$(this).addClass("formAPD__container__group__field--focus");
 	});
-
+ 	/*
+ 	$("label").click(function({
+ 		$(this).addClass("formAPD__container__group__field--focus");
+ 	}))
+	*/
 	$(".formAPD__container__button").click(function(){
 
 		/*
@@ -24,7 +28,7 @@
 			
 		}
 
-		if($('#email').val() === ""){
+		if($("#email").val() === ""){
 			$("#email").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errormail").html("e-mail tidak boleh kosong");
 		} else {
@@ -32,12 +36,12 @@
 			$("#errormail").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
 		}
 
-		if($('#passwd').val().length < 8){
-			$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
-			$("#errorpass").html("Password belum sampai 8 karakter");		
+		if($('#passwd').val().length < '8'){
+			/*$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");*/
+			$("#errorpass").html("Password harus minimal 8 karakter");		
 		}
 
-		if($('#passwd').val() === ""){
+		if($("#passwd").val() === ""){
 			$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errorpass").html("Password tidak boleh kosong");
 		} else {
@@ -45,7 +49,7 @@
 			$("#errorpass").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
 		}
 		
-		if ($('#bio').val() === ""){
+		if ($("#bio").val() === ""){
 			$("#bio").removeClass("formAPD__container__group__txtar").addClass("formAPD__container__group__field--error");
 			$("#errorbio").html("Bio tidak boleh kosong");
 		}
