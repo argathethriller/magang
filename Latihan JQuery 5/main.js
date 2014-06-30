@@ -19,19 +19,20 @@
 			$("#fname").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errorname").html("Nama tidak boleh kosong");
 		} else{
-			$("#fname").addClass("formAPD__container__group__field");
+			$("#fname").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field");
 			$("#errorname").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
+			
 		}
 
 		if($('#email').val() === ""){
 			$("#email").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errormail").html("e-mail tidak boleh kosong");
 		} else {
-			$("#email").addClass("formAPD__container__group__field");
+			$("#email").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field");
 			$("#errormail").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
 		}
 
-		if($('#passwd').length < 8){
+		if($('#passwd').val().length < 8){
 			$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errorpass").html("Password belum sampai 8 karakter");		
 		}
