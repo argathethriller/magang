@@ -34,7 +34,9 @@
         } 
         $('#Hobby').each(function(){
             if($('#Hobby').val() === ""){
-               $('#Hobby').addClass("form-input--error");
+                $('#Hobby').addClass("form-input--error");
+            } else {
+                $('#Hobby').removeClass("form-input--error").addClass("form-input");
             }
         });
 
