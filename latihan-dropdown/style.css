@@ -1,0 +1,39 @@
+.list-nostyle{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	background: #f00;
+}
+
+.menu a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1.5em;
+	font-family: Arial;	
+}
+
+.menu__item{
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item:hover{
+	background: #d00;
+}
+
+.menu__item:hover .menu__sub{
+	display: block;
+}
+
+.menu__sub{
+	top: 0px;
+	width: 100%;
+	display : none;
+	background: #000;
+	position : absolute;
+}

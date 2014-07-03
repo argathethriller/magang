@@ -1,0 +1,37 @@
+.box{
+	width:100px;
+	height:100px;
+	position:absolute;
+}
+
+.box--left{
+	left:0px;
+}
+
+.box--right{
+	right:0px;
+}
+
+.box--top{
+	top:0px;
+}
+
+.box--bottom{
+	bottom:0px;
+}
+
+.box--red{
+	background:#f00;
+}
+
+.box--purple{
+	background:#f0f;
+}
+
+.box--green{
+	background:#0f0;
+}
+
+.box--blue{
+	background:#00f;
+}

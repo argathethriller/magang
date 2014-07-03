@@ -9,7 +9,7 @@
         e.preventDefault();
 
         var newInput = input.clone(true);
-
+        
         container.append(newInput);
         newInput.focus();
     });

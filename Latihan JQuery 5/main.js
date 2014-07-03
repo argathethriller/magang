@@ -36,8 +36,8 @@
 			$("#errormail").removeClass("formAPD__container__group__field--error").addClass("formAPD__container__group__field--solved");
 		}
 
-		if($('#passwd').val().length < '8'){
-			/*$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");*/
+		if($('#passwd').val().length < 8){
+			$("#passwd").removeClass("formAPD__container__group__field").addClass("formAPD__container__group__field--error");
 			$("#errorpass").html("Password harus minimal 8 karakter");		
 		}
 
